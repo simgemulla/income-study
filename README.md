@@ -1,12 +1,14 @@
 # income-study
 
 Technical Specifications:
+
 In this project I used;
 Numpy, Pandas for getting, cleaning and manipulating data.
 Matplotlib for plotting and visualization of data.
 Scikit-learn for the model. I used logistic regression because it is simple to use and based on my research it can usually be used for classification problems. In this problem, we are trying to find out that whether the income of the customer is more than 50K or not for people whose salaries are unknown. This is a classification, so we can use it here.
 
 Process Details:
+
 First of all, I read the data from csv file based on semicolons. Based on the data on the table     there is total number of 45222 data, 11208 of them are having income more than 50K, and 28455 of them are less than or equal to 50K. 
 Since we will get output from data, not NA or Null values, I dropped NA values from the data.
 To see which columns have more unique values, I got value counts of all columns. Then I dropped all columns which more likely do not affect the income values. These are: 'hours-per-week' , 'capital-loss', 'capital-gain','age','native-country', ‘Name’.
